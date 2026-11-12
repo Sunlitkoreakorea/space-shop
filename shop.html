@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>물건 — 우주쇼핑몰</title>
+<meta name="description" content="외계에서 온 멋진 물건 — 팬이 만든 비공식 우주쇼핑몰 데모">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/galmuri@2.40.3/dist/galmuri.css">
+<link rel="stylesheet" href="style.css?v=1">
+</head>
+<body>
+<canvas id="bg" aria-hidden="true"></canvas>
+
+<div class="edge edge-l" aria-hidden="true"></div>
+<div class="edge edge-r" aria-hidden="true"></div>
+<i class="glitch g1" aria-hidden="true"></i>
+<i class="glitch g2" aria-hidden="true"></i>
+<i class="glitch g3" aria-hidden="true"></i>
+
+<main class="page shop-page">
+  <!-- 물건 목록: 한 화면에 한 쪽씩, 아래 숫자로 넘긴다 -->
+  <div class="shop-wrap">
+    <div class="floaty" aria-hidden="true">
+      <div class="astro" data-sprite="astro"></div>
+      <i class="bub b1"></i><i class="bub b2"></i><i class="bub b3"></i>
+    </div>
+
+    <section class="shop" id="shop" aria-labelledby="shopHead">
+      <h1 class="shop-head" id="shopHead">물건</h1>
+      <div class="panel">
+        <ul class="items" id="items"></ul>
+        <nav class="pager" id="pager" aria-label="쪽 넘기기"></nav>
+      </div>
+    </section>
+
+    <div class="star" data-sprite="star" aria-hidden="true"></div>
+  </div>
+
+  <a class="back" href="index.html"><span class="caret">&lt;&lt;</span>나는 돌아간다</a>
+  <p class="fan-note">팬이 만든 비공식 데모 / 원작 「괴담에 떨어져도 출근을 해야 하는구나」</p>
+</main>
+
+<script src="app.js?v=1"></script>
+</body>
+</html>

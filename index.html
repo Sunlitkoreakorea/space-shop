@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>우주쇼핑몰</title>
+<meta name="description" content="외계에서 온 멋진 물건 — 팬이 만든 비공식 우주쇼핑몰 데모">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/galmuri@2.40.3/dist/galmuri.css">
+<link rel="stylesheet" href="style.css?v=1">
+</head>
+<body>
+<div class="edge edge-l" aria-hidden="true"></div>
+<div class="edge edge-r" aria-hidden="true"></div>
+<i class="glitch g1" aria-hidden="true"></i>
+<i class="glitch g2" aria-hidden="true"></i>
+<i class="glitch g3" aria-hidden="true"></i>
+
+<!-- 첫 화면: 창 전체가 우주 -->
+<main class="page home">
+  <div class="hero" id="hero">
+    <canvas id="sky" aria-hidden="true"></canvas>
+    <div class="twinkles" id="twinkles" aria-hidden="true"></div>
+
+    <!-- 가운데 그림(로고 + 들어가기) -->
+    <div class="stage">
+      <div class="burst">
+        <svg id="burstSvg" viewBox="0 0 640 330" aria-hidden="true"><polygon id="burstPoly"/></svg>
+        <h1 class="logo" aria-label="우주쇼핑몰">
+          <span class="c1">&lt;</span><span class="c2">우</span><span class="c3">주</span><span class="c4">쇼</span><span class="c5">핑</span><span class="c6">몰</span><span class="c7">&gt;</span>
+        </h1>
+        <svg class="sub" viewBox="0 0 600 120" aria-hidden="true">
+          <path id="wave" d="M8 96 C 70 80, 130 104, 205 92 S 330 70, 400 70 S 530 52, 596 30" fill="none"/>
+          <use href="#wave" class="wave-line" transform="translate(0 9)"/>
+          <text class="sub-back"><textPath href="#wave" startOffset="50%" text-anchor="middle"><tspan class="ref">※</tspan>외계에서 온 멋진 물건<tspan class="ref">※</tspan>~!!</textPath></text>
+          <text class="sub-front"><textPath href="#wave" startOffset="50%" text-anchor="middle"><tspan class="ref">※</tspan>외계에서 온 멋진 물건<tspan class="ref">※</tspan>~!!</textPath></text>
+        </svg>
+        <p class="sr">외계에서 온 멋진 물건</p>
+      </div>
+
+      <a class="look" id="look" href="shop.html"><span class="caret">&gt;&gt;</span>나는<br>물건을 본다</a>
+    </div>
+
+    <!-- 바닥에 붙는 것들 -->
+    <div class="beam" aria-hidden="true"></div>
+    <div class="alien" data-sprite="alien" aria-hidden="true"></div>
+    <div class="ufo" data-sprite="ufo" aria-hidden="true"></div>
+    <div class="floaty" aria-hidden="true">
+      <div class="astro" data-sprite="astro"></div>
+      <i class="bub b1"></i><i class="bub b2"></i><i class="bub b3"></i>
+    </div>
+    <div class="taskbar"><p class="fan-note">팬이 만든 비공식 데모 / 원작 「괴담에 떨어져도 출근을 해야 하는구나」</p></div>
+  </div>
+</main>
+
+<script src="app.js?v=1"></script>
+</body>
+</html>
